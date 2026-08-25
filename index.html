@@ -1,40 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>cemitério literário</title>
-        <style>body{background-color:rgb(218, 218, 218);
-        color:rgb(86, 71, 94);
-        font-family:serif;
-        text-align: center;
-        padding: 40px}
-        h1 {color:rgb(31, 2, 44);}
-        a {color:indigo;
-            text-decoration: none;
-            font-size: 20px;}
-            a:hover {text-decoration: underline;}
-            .textos {border:1px plum solid;
-                padding:20px;
-                margin-top: 30px;
-                text-align: left;
-                max-width: 600px;
-                margin-left: auto;
-                margin-right: auto;
-                white-space: pre-line; /*para quebrar a linha do poema */}
-                </style>
-    </head>
-    <body>
-        <h1> bem vindo ao meu site viral</h1>
-        <p>Uma tela grafada por bináridade onde se encontra a imprecisão humana. </p>
-        <hr>
-        <h2>Textos</h2>
-<p>clique no título para ler:</p>
-<ul style="list-style: none; padding: 0;">
-  <p><a href="textos/neblina.html">neblina</a> </p>
-  <p></p><a href="textos/calculos.html">cálculos</a></p>
-  <P><a href="textos/hidrofilia.html">hidrofilia</a></P>
-<p><a href="textos/beatrice.html">Beatrice</a></p>
-</ul>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cemitério literário</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --vinho: #4a1a22;
+  --renda: #5c2430;
+  --papel: #e9ddd0;
+  --tinta: #2b1e2f;
+  --dourado: #8a7a5a;
+}
+
+body{
+  background-color: #0e0a0a;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+  color: var(--tinta);
+  font-family: 'Cormorant Garamond', serif;
+  display:flex;
+  justify-content:center;
+  padding: 20px;
+  margin:0;
+}
+
+/* BORDA DE RENDA - IGUAL A FOTO 3 */
+.lace-wrapper{
+  background: var(--renda);
+  background-image: url('https://www.transparenttextures.com/patterns/lace.png');
+  padding: 14px;
+  box-shadow: 0 0 0 5px var(--vinho), 0 0 40px rgba(0,0,0,0.9);
+  max-width: 700px;
+  width: 100%;
+}
+
+/* PAPEL VELHO POR DENTRO */
+.page{
+  background: #e9ddd0 url('https://www.transparenttextures.com/patterns/old-paper.png');
+  padding: 40px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+h1{
+  color: rgb(31, 2, 44);
+  font-family: 'Cinzel', serif; /* fonte medieval mas legível */
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitulo{
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--dourado);
+  margin-bottom: 25px;
+}
+
+hr{
+  border: none;
+  text-align: center;
+  margin: 25px 0;
+}
+hr::after{
+  content: "— ♱ —";
+  color: var(--dourado);
+  letter-spacing: 5px;
+}
+
+h2{
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: var(--vinho);
+}
+
+a{
+  color: indigo;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'IM Fell English', serif;
+}
+a:hover{ text-decoration: underline; color: var(--vinho); }
+
+.textos{
+  border: 1px solid var(--dourado);
+  outline: 3px double var(--dourado);
+  outline-offset: 4px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-line;
+  background: #fdf8ef url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  box-shadow: inset 0 0 30px rgba(100,80,60,0.15);
+}
+
+.textos p{ margin: 5px 0; }
+
+.footer-oldweb{
+  margin-top: 30px;
+  background: #1a1510;
+  color: #8a7a5a;
+  padding: 6px;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+<div class="lace-wrapper">
+<div class="page">
+
+  <h1>bem vindo ao meu site viral</h1>
+  <p class="subtitulo">Uma tela grafada por binaridade onde se encontra a imprecisão humana.</p>
+  
+  <hr>
+
+  <h2>Textos</h2>
+  <p style="font-style:italic; font-size:14px;">> clique no título para ler:</p>
+
+  <ul style="list-style: none; padding: 0;" class="textos">
+    <p><a href="textos/neblina.html">neblina</a></p>
+    <p><a href="textos/calculos.html">cálculos</a></p>
+    <p><a href="textos/hidrofilia.html">hidrofilia</a></p>
+    <p><a href="textos/beatrice.html">beatrice</a></p>
+  </ul>
+
+  <div class="footer-oldweb">
+    VISITORS: 004213 | Est. 2026 | Best viewed in Netscape | © cemitério literário
+  </div>
+
+</div>
+</div>
 </body>
 </html>
