@@ -20,8 +20,27 @@
 a:hover { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="15">❦</text></svg>'), pointer; }
 </style>
   <style>
-  
-body{
+  <script>
+setInterval(()=>{
+  let petal = document.createElement('div');
+  petal.innerHTML = '❦';
+  petal.style.position = 'fixed';
+  petal.style.left = Math.random()*100+'vw';
+  petal.style.top = '-20px';
+  petal.style.color = '#4a1422';
+  petal.style.opacity = '0.3';
+  petal.style.fontSize = '12px';
+  petal.style.pointerEvents = 'none';
+  petal.style.animation = 'cair 8s linear';
+  document.body.appendChild(petal);
+  setTimeout(()=>petal.remove(),8000);
+}, 700);
+</script>
+<style>
+@keyframes cair { to{ transform: translateY(105vh) rotate(360deg); } }
+</style>
+ <body> 
+
   background-color: #0e0a0a;
   background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
   color: var(--tinta);
@@ -119,7 +138,7 @@ a:hover{ text-decoration: underline; color: var(--vinho); }
   font-family: monospace;
   font-size: 11px;
   letter-spacing: 1px;
-}
+ </body>
 </style>
 </head>
 
