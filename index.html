@@ -37,13 +37,10 @@ a.botao{font-family:Cinzel;font-size:11px;border:1px solid #4a1422;padding:8px 1
 <div class="lace-wrapper">
   <h1>Cemitério literário</h1>
   <p class="subtitulo">Uma tela grafada por binaridade onde se encontra a imprecisão humana</p>
-  
-  <div class="menu">
-    <a href="index.html">HOME</a> • <a href="neblina.html">NEBLINA</a> • <a href="calculos.html">CALCULOS</a> • <a href="hidrofilia.html">HIDROFILIA</a>
   </div>
 
   <div class="poema">
-    <p>Seja bem vinda ao meu arquivo gótico. Clique nos poemas acima.</p>
+    <p> Clique para ler</p>
     <br>
     <h2>Textos</h2>
   <p style="font-style:italic; font-size:14px;">> clique no título para ler:</p>
@@ -61,23 +58,6 @@ a.botao{font-family:Cinzel;font-size:11px;border:1px solid #4a1422;padding:8px 1
 
 </div>
 
-<script>
-// PETALAS CAINDO - COLOCADO NO LUGAR CERTO, ANTES DO </body>
-setInterval(()=>{
-  let petal = document.createElement('div');
-  petal.innerHTML = '❦';
-  petal.style.position = 'fixed';
-  petal.style.left = Math.random()*100+'vw';
-  petal.style.top = '-20px';
-  petal.style.color = '#4a1422';
-  petal.style.opacity = '0.25';
-  petal.style.fontSize = '14px';
-  petal.style.pointerEvents = 'none';
-  petal.style.animation = 'cair 8s linear';
-  document.body.appendChild(petal);
-  setTimeout(()=>petal.remove(),8000);
-}, 900);
-</script>
 
 </body>
 </html>
