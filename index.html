@@ -3,155 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>cemitério literário</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-
+<title>Cemitério literário</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --vinho: #4a1a22;
-  --renda: #5c2430;
-  --papel: #e9ddd0;
-  --tinta: #2b1e2f;
-  --dourado: #8a7a5a;
-  
+*{box-sizing:border-box}
+body{
+  background-color:#0e0a0a;
+  background-image:url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  color:#f3e8c9;
+  font-family:'Cormorant Garamond', serif;
+  display:flex;justify-content:center;
+  padding:20px;margin:0;
 }
-<style>
-* { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="15">†</text></svg>'), auto; }
-a:hover { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="15">❦</text></svg>'), pointer; }
-</style>
-  <style>
-  <script>
-setInterval(()=>{
-  let petal = document.createElement('div');
-  petal.innerHTML = '❦';
-  petal.style.position = 'fixed';
-  petal.style.left = Math.random()*100+'vw';
-  petal.style.top = '-20px';
-  petal.style.color = '#4a1422';
-  petal.style.opacity = '0.3';
-  petal.style.fontSize = '12px';
-  petal.style.pointerEvents = 'none';
-  petal.style.animation = 'cair 8s linear';
-  document.body.appendChild(petal);
-  setTimeout(()=>petal.remove(),8000);
-}, 700);
-</script>
-<style>
-@keyframes cair { to{ transform: translateY(105vh) rotate(360deg); } }
-</style>
- <body> 
-
-  background-color: #0e0a0a;
-  background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
-  color: var(--tinta);
-  font-family: 'Cormorant Garamond', serif;
-  display:flex;
-  justify-content:center;
-  padding: 20px;
-  margin:0;
-}
-
-/* BORDA DE RENDA - IGUAL A FOTO 3 */
+/* CAIXA COM RENDA */
 .lace-wrapper{
-  background: var(--renda);
-  background-image: url('https://www.transparenttextures.com/patterns/lace.png');
-  padding: 14px;
-  box-shadow: 0 0 0 5px var(--vinho), 0 0 40px rgba(0,0,0,0.9);
-  max-width: 700px;
-  width: 100%;
+  width:100%;max-width:800px;background:#f4ead0;color:#1a1a1a;
+  border:1px solid #4a1422;outline:1px solid #4a1422;outline-offset:5px;
+  padding:50px 40px 30px;position:relative;
 }
-
-/* PAPEL VELHO POR DENTRO */
-.page{
-  background: #e9ddd0 url('https://www.transparenttextures.com/patterns/old-paper.png');
-  padding: 40px;
-  border: 1px solid #000;
-  text-align: center;
-}
-
-h1{
-  color: rgb(31, 2, 44);
-  font-family: 'Cinzel', serif; /* fonte medieval mas legível */
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: lowercase;
-  font-size: 28px;
-  margin-bottom: 5px;
-}
-
-.subtitulo{
-  font-family: 'IM Fell English', serif;
-  font-style: italic;
-  font-size: 15px;
-  color: var(--dourado);
-  margin-bottom: 25px;
-}
-
-hr{
-  border: none;
-  text-align: center;
-  margin: 25px 0;
-}
-hr::after{
-  content: "— ♱ —";
-  color: var(--dourado);
-  letter-spacing: 5px;
-}
-
-h2{
-  font-family: 'Cinzel', serif;
-  font-size: 18px;
-  letter-spacing: 5px;
-  color: var(--vinho);
-}
-
-a{
-  color: indigo;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'IM Fell English', serif;
-}
-a:hover{ text-decoration: underline; color: var(--vinho); }
-
-.textos{
-  border: 1px solid var(--dourado);
-  outline: 3px double var(--dourado);
-  outline-offset: 4px;
-  padding: 20px;
-  margin-top: 30px;
-  text-align: left;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  white-space: pre-line;
-  background: #fdf8ef url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  box-shadow: inset 0 0 30px rgba(100,80,60,0.15);
-}
-
-.textos p{ margin: 5px 0; }
-
-.footer-oldweb{
-  margin-top: 30px;
-  background: #1a1510;
-  color: #8a7a5a;
-  padding: 6px;
-  font-family: monospace;
-  font-size: 11px;
-  letter-spacing: 1px;
- </body>
+.lace-wrapper::before{content:'❦';position:absolute;top:10px;left:15px;color:#4a1422;font-size:22px}
+.lace-wrapper::after{content:'❦';position:absolute;top:10px;right:15px;color:#4a1422;font-size:22px}
+h1{font-family:Cinzel;text-align:center;letter-spacing:4px;margin:0}
+.subtitulo{font-style:italic;text-align:center;margin-top:10px}
+.menu{text-align:center;margin:20px 0;font-family:Cinzel;font-size:11px;letter-spacing:2px}
+.menu a{color:#4a1422;text-decoration:none;margin:0 8px}
+.poema{margin-top:30px;line-height:1.7;font-size:18px}
+a.botao{font-family:Cinzel;font-size:11px;border:1px solid #4a1422;padding:8px 15px;text-decoration:none;color:#4a1422}
+@keyframes cair{to{transform:translateY(105vh) rotate(360deg)}}
 </style>
 </head>
 
 <body>
 <div class="lace-wrapper">
-<div class="page">
-
   <h1>Cemitério literário</h1>
-  <p class="subtitulo">Uma tela grafada por binaridade onde se encontra a imprecisão humana.</p>
+  <p class="subtitulo">Uma tela grafada por binaridade onde se encontra a imprecisão humana</p>
   
-  <hr>
+  <div class="menu">
+    <a href="index.html">HOME</a> • <a href="neblina.html">NEBLINA</a> • <a href="calculos.html">CALCULOS</a> • <a href="hidrofilia.html">HIDROFILIA</a>
+  </div>
 
-  <h2>Textos</h2>
+  <div class="poema">
+    <p>Seja bem vinda ao meu arquivo gótico. Clique nos poemas acima.</p>
+    <br>
+    <h2>Textos</h2>
   <p style="font-style:italic; font-size:14px;">> clique no título para ler:</p>
 
   <ul style="list-style: none; padding: 0;" class="textos">
@@ -166,6 +60,24 @@ a:hover{ text-decoration: underline; color: var(--vinho); }
   </div>
 
 </div>
-</div>
+
+<script>
+// PETALAS CAINDO - COLOCADO NO LUGAR CERTO, ANTES DO </body>
+setInterval(()=>{
+  let petal = document.createElement('div');
+  petal.innerHTML = '❦';
+  petal.style.position = 'fixed';
+  petal.style.left = Math.random()*100+'vw';
+  petal.style.top = '-20px';
+  petal.style.color = '#4a1422';
+  petal.style.opacity = '0.25';
+  petal.style.fontSize = '14px';
+  petal.style.pointerEvents = 'none';
+  petal.style.animation = 'cair 8s linear';
+  document.body.appendChild(petal);
+  setTimeout(()=>petal.remove(),8000);
+}, 900);
+</script>
+
 </body>
 </html>
