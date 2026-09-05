@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>neblina — cemitério literário</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{ --vinho:#4a1422; --marrom:#1a0d0d; --bege:#f2e8c9; --preto:#0e0a0a; }
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--preto);background-image:radial-gradient(#2a1216 1.2px, transparent 1.2px);background-size:28px 28px;display:flex;justify-content:center;padding:32px 16px;}
+.palco{display:flex;background:var(--vinho);padding:0 48px;position:relative;max-width:860px;width:100%;box-shadow:0 0 0 1px var(--vinho), 0 0 0 10px var(--bege), 0 20px 60px rgba(0,0,0,.8);}
+.palco::before,.palco::after{content:'';position:absolute;top:0;bottom:0;width:48px;background-image:url('../renda.png');background-size:48px auto;background-repeat:repeat-y;background-position:center top;z-index:2;}
+.palco::before{left:0}.palco::after{right:0;transform:scaleX(-1)}
+.moldura{width:100%;background:var(--bege) url('https://www.transparenttextures.com/patterns/old-paper.png');padding:48px 36px 36px;z-index:1;}
+.titulo-poema{font-family:'UnifrakturMaguntia',cursive;font-size:52px;font-weight:400;text-align:center;margin:0;color:var(--marrom);}
+.meta{font-family:Cinzel;font-size:9px;letter-spacing:3px;text-transform:uppercase;text-align:center;margin:10px 0 30px;color:var(--vinho);opacity:.8}
+.poema{font-family:'EB Garamond',serif;font-size:19px;line-height:1.95;color:var(--marrom);border-left:1.5px solid var(--vinho);padding-left:22px;white-space:pre-wrap;}
+.poema::first-letter{font-family:'UnifrakturMaguntia';font-size:42px;float:left;line-height:.8;margin:6px 8px 0 0;color:var(--vinho)}
+.voltar{display:inline-flex;gap:8px;align-items:center;margin-top:32px;font-family:Cinzel;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--vinho);text-decoration:none;border:1px solid var(--vinho);padding:10px 16px;transition:.2s}
+.voltar:hover{background:var(--vinho);color:var(--bege)}
+@media(max-width:600px){body{padding:16px 10px}.palco{padding:0 32px;box-shadow:0 0 0 1px var(--vinho), 0 0 0 6px var(--bege), 0 10px 30px rgba(0,0,0,.8)}.palco::before,.palco::after{width:32px;background-size:32px auto}.moldura{padding:36px 20px 28px}.poema{border-left:none;border-top:1.5px solid var(--vinho);padding:18px 0 0;font-size:18px}}
+</style>
+</head>
+<body>
+<div class="palco"><div class="moldura">
+  <h1 class="titulo-poema">22.12</h1>
+
+  <div class="poema-text">
+    <p>
+      Essas linhas me levam a um lugar conhecido<br>
+      Onde o sol que nascia passava despercebido<br>
+      Muitos sonhos, lá habitavam<br>
+      Mas aqueles que sorriam, choravam.
+    </p>
+
+    <p>
+      Onde a noite não era escura<br>
+      Onde o terror era a cura<br>
+      Onde os corpos padeciam<br>
+      E jamais perceberiam
+    </p>
+
+    <p>
+      O acalanto era a liberdade<br>
+      Quanto mais livre, mais tarde<br>
+      E a vida que a gente levava<br>
+      Era o que nos acordava
+    </p>
+
+    <p>
+      Na bandeja há excitação<br>
+      Nas estrofes, paixão<br>
+      Na saída, esperança<br>
+      E na mente o sonho de criança
+    </p>
+   <a class="voltar" href="../index.html">← retornar</a>
+</div></div>
+</body>
+</html>
