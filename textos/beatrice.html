@@ -1,135 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>neblina — cemitério literário</title>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<style>
-:root{
-  --vinho:#4a1422;
-  --vinho-deep:#2a0e14;
-  --bege:#f2e8c9;
-  --marrom:#1a0d0d;
-  --line:#d6c6a3;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{background:#0a0808}
-body{
-  min-height:100dvh;
-  background:#0a0808;
-  display:flex;justify-content:center;align-items:flex-start;
-  padding: clamp(12px, 3vw, 32px);
-}
 
-/* ESTRUTURA GÓTICA RESPONSIVA */
-.livro{
-  width:100%;
-  max-width:760px;
-  display:grid;
-  /* No PC: 3 colunas com barra lateral. No celular vira 1 coluna */
-  grid-template-columns: clamp(12px, 2.5vw, 44px) minmax(0, 1fr) clamp(12px, 2.5vw, 44px);
-  background:var(--vinho);
-  box-shadow:0 0 0 1px var(--vinho), 0 20px 60px rgba(0,0,0,.7);
-}
-.lateral{
-  background:var(--vinho);
-  background-image: radial-gradient(rgba(0,0,0,.3) 1px, transparent 1px);
-  background-size:18px 18px;
-}
-.pagina{
-  background:var(--bege) url('https://www.transparenttextures.com/patterns/old-paper.png');
-  padding: clamp(32px, 6vw, 64px) clamp(20px, 5vw, 48px);
-  position:relative;
-}
+ <!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>beatrice — cemitério literário</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Fragment+Mono&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>:root{--vinho:#4a1422;--bege:#f2e8c9;--marrom:#1a0d0d;--line:#d6c6a3}*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0808;display:flex;justify-content:center;padding:clamp(0px,2vw,24px)}.livro{width:100%;max-width:760px;display:grid;grid-template-columns:clamp(14px,3vw,44px) 1fr clamp(14px,3vw,44px);background:var(--vinho)}.lateral{background:var(--vinho)}.pagina{background:var(--bege) url('https://www.transparenttextures.com/patterns/old-paper.png');padding:clamp(28px,5vw,52px) clamp(20px,5vw,48px);color:var(--marrom)}.mono{font-family:'Fragment Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase}.topo{display:flex;justify-content:space-between;color:var(--vinho);opacity:.6;margin-bottom:24px}.topo a{color:var(--vinho);text-decoration:none}.titulo{font-family:'UnifrakturMaguntia';font-size:clamp(42px,8vw,64px);text-align:center;font-weight:400}.divisor{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:20px 0 32px;position:relative}.divisor::after{content:'†';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--bege);padding:0 10px;color:var(--vinho)}.texto{font-family:'EB Garamond';font-size:clamp(17px,3.8vw,19px);line-height:1.9;white-space:pre-line;max-width:58ch;margin:0 auto}.texto::first-letter{font-family:'UnifrakturMaguntia';font-size:2.6em;float:left;line-height:.7;margin:.1em.12em 0 0;color:var(--vinho)}@media(max-width:640px){body{padding:0}.livro{grid-template-columns:1fr}.lateral{display:none}.pagina{border-left:7px solid var(--vinho);border-right:7px solid var(--vinho);min-height:100dvh}.texto{white-space:normal}}</style></head><body><div class="livro"><div class="lateral"></div><main class="pagina"><div class="topo mono"><a href="../index.html">← cemitério</a><span>[003] beatrice.exe</span></div><h1 class="titulo">beatrice</h1><div class="divisor"></div><div class="texto">Guardiã dos meus caminhos ao seu céu, me diga
+Me diga por que és tão cruel.
+Finge te me afogar em dúvidas
+Que agora, estou numa inquietação mórbida
 
-/* Header do texto */
-.topo{
-  display:flex;justify-content:space-between;align-items:center;
-  font-family:Cinzel;font-size:9px;letter-spacing:3px;
-  color:var(--vinho);opacity:.6;margin-bottom:28px;
-}
-.topo a{text-decoration:none;color:var(--vinho);transition:.2s}
-.topo a:hover{letter-spacing:4px;opacity:1}
+Por que aprisionaste meu coração?
+Por que traíste minha visão
+Tornando-me fraca e sem razão
+Por isso me contente neste purgatório
+Que mesmo tinha um possível destino ilusório.
 
-.titulo{
-  font-family:'UnifrakturMaguntia', cursive;
-  font-size:clamp(36px, 9vw, 56px);
-  text-align:center;color:var(--marrom);font-weight:400;
-  line-height:.9;
-}
-.linha{width:100%;max-width:280px;height:1px;background:var(--marrom);margin:14px auto 36px;opacity:.6}
+Céus, queria te pertencer
+Assim como tu és feito da paixão amanhecer
+Chora, Beatriz, pois tuas ondas são como números
+Que sabes encantar com o desejo, o querer
 
-/* Texto poético - CORREÇÃO MOBILE */
-.poema{
-  font-family:'EB Garamond', serif;
-  font-size:clamp(17px, 4.2vw, 19.5px);
-  line-height:1.85;
-  color:var(--marrom);
-  text-align:left; /* no celular esquerda é mais legível */
-}
-.poema p{margin-bottom:1.4em}
-.poema .capitular::first-letter{
-  font-family:'UnifrakturMaguntia', cursive;
-  font-size:2.6em;float:left;line-height:.8;
-  margin:.05em .14em 0 0;color:var(--vinho);
-}
-
-/* Rodapé cyberpunk gótico */
-.rodape{
-  margin-top:48px;padding-top:16px;
-  border-top:1px solid var(--line);
-  display:flex;justify-content:space-between;
-  font-family:Cinzel;font-size:8px;letter-spacing:3px;opacity:.4;
-}
-
-/* MOBILE PROFISSIONAL - AQUI ESTAVA O ERRO */
-@media(max-width:600px){
-  body{padding:0}
-  .livro{
-    grid-template-columns:1fr; /* some com as barras laterais gigantes */
-    max-width:100%;
-  }
-  .lateral{display:none} /* esconde as barras no celular */
-  .pagina{
-    border-left:6px solid var(--vinho);
-    border-right:6px solid var(--vinho);
-    min-height:100dvh;
-  }
-  .poema{text-align:left; hyphens:auto}
-}
-</style>
-</head>
-<body>
-<div class="livro">
-  <div class="lateral"></div>
-  <main class="pagina">
-    <div class="topo">
-      <a href="../index.html">← cemitério</a>
-    
-    </div>
-
-    <h1 class="titulo">neblina</h1>
-    <div class="linha"></div>
-
-    <article class="poema">
-      <p class="capitular"><p>Em tua neblina, transpassei minhas mãos como lâminas em busca da tua materialidade falha. 
-E, no fim do nevoeiro, lá estarei: meu reflexo deturpado, projetado pela condensação que eu mesma provoquei.
-  As nuvens acolhem aquela silhueta solitária como lençóis celestes caídos sobre seus ombros, porém, seu frio rasga e penetra sua carne de forma sutil, fazendo com que seus olhos chovam ainda mais.
-Deitada sobre o chão úmido de minha noite, encara as estrelas, tornando-as sua religão e clamando por elas como uma devota fiel. 
-Os astros brilhantes riam como crianças travessas enquanto observavam a pobre alma padecer.
-  Esvaziada pelo frio e pelo silêncio, percebeu a névoa deitada sobre si e, em seu último toque desesperançoso, condensou seu pequeno pedaço de sonho, que agora molhava seus olhos e seus lábios.</p></div></div>
-  <a class="voltar" href="../index.html">← retornar</a>
-    </article>
-
-    <div class="rodape">
-      <span>© CEMETERYART_</span>
-      
-    </div>
-  </main>
-  <div class="lateral"></div>
-</div>
-</body>
-</html>
-    
- 
+Dante é meu paraíso
+Mas tornaste teu espírito
+E agora, fico a observar
+Toda essa divina comédia eterna</div></main><div class="lateral"></div></div></body></html>
