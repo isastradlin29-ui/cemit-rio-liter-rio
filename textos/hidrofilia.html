@@ -1,46 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hidrofilia— cemitério literário</title>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hidrofilia — cemitério literário</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Fragment+Mono&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-:root{ --vinho:#4a1422; --marrom:#1a0d0d; --bege:#f2e8c9; --preto:#0e0a0a; }
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:var(--preto);background-image:radial-gradient(#2a1216 1.2px, transparent 1.2px);background-size:28px 28px;display:flex;justify-content:center;padding:32px 16px;}
-.palco{display:flex;background:var(--vinho);padding:0 48px;position:relative;max-width:860px;width:100%;box-shadow:0 0 0 1px var(--vinho), 0 0 0 10px var(--bege), 0 20px 60px rgba(0,0,0,.8);}
-.palco::before,.palco::after{content:'';position:absolute;top:0;bottom:0;width:48px;background-image:url('../renda.png');background-size:48px auto;background-repeat:repeat-y;background-position:center top;z-index:2;}
-.palco::before{left:0}.palco::after{right:0;transform:scaleX(-1)}
-.moldura{width:100%;background:var(--bege) url('https://www.transparenttextures.com/patterns/old-paper.png');padding:48px 36px 36px;z-index:1;}
-.titulo-poema{font-family:'UnifrakturMaguntia',cursive;font-size:52px;font-weight:400;text-align:center;margin:0;color:var(--marrom);}
-.meta{font-family:Cinzel;font-size:9px;letter-spacing:3px;text-transform:uppercase;text-align:center;margin:10px 0 30px;color:var(--vinho);opacity:.8}
-.poema{font-family:'EB Garamond',serif;font-size:19px;line-height:1.95;color:var(--marrom);border-left:1.5px solid var(--vinho);padding-left:22px;white-space:pre-wrap;}
-.poema::first-letter{font-family:'UnifrakturMaguntia';font-size:42px;float:left;line-height:.8;margin:6px 8px 0 0;color:var(--vinho)}
-.voltar{display:inline-flex;gap:8px;align-items:center;margin-top:32px;font-family:Cinzel;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--vinho);text-decoration:none;border:1px solid var(--vinho);padding:10px 16px;transition:.2s}
-.voltar:hover{background:var(--vinho);color:var(--bege)}
-@media(max-width:600px){body{padding:16px 10px}.palco{padding:0 32px;box-shadow:0 0 0 1px var(--vinho), 0 0 0 6px var(--bege), 0 10px 30px rgba(0,0,0,.8)}.palco::before,.palco::after{width:32px;background-size:32px auto}.moldura{padding:36px 20px 28px}.poema{border-left:none;border-top:1.5px solid var(--vinho);padding:18px 0 0;font-size:18px}}
-</style>
-</head>
-<body>
-<div class="palco"><div class="moldura">
-  <h1 class="titulo-poema">Hidrofilia—</h1>
+:root{--vinho:#4a1422;--vinho2:#2a0e14;--bege:#f2e8c9;--marrom:#1a0d0d;--line:#c9b896}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#080606;display:flex;justify-content:center;padding:clamp(0,2vw,28px);min-height:100dvh}
+.livro{width:100%;max-width:800px;display:grid;grid-template-columns:clamp(16px,3vw,52px) 1fr clamp(16px,3vw,52px);background:linear-gradient(180deg,var(--vinho),var(--vinho2));box-shadow:0 0 0 1px var(--vinho),0 30px 80px rgba(0,0,0,.8)}
+.lateral{position:relative;overflow:hidden}.lateral::after{content:'† † †';writing-mode:vertical-rl;font-family:'Fragment Mono';font-size:9px;letter-spacing:6px;color:rgba(242,232,201,.25);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.pagina{background:var(--bege) url('https://www.transparenttextures.com/patterns/old-paper.png');padding:0;position:relative}
+.pagina::before{content:'';position:absolute;inset:12px;border:1px solid var(--line);pointer-events:none;opacity:.6}
+.pagina::after{content:'';position:absolute;inset:13px;border:1px solid var(--vinho);pointer-events:none;opacity:.08}
+.top{padding:20px 24px 14px;display:flex;justify-content:space-between;border-bottom:1px double var(--line);font-family:'Fragment Mono';font-size:9px;letter-spacing:3px;color:var(--vinho);opacity:.7}.top a{color:var(--vinho);text-decoration:none}
+.conteudo{padding:clamp(24px,5vw,52px) clamp(22px,5vw,56px)}
+.titulo{font-family:'UnifrakturMaguntia';font-size:clamp(44px,8vw,72px);text-align:center;font-weight:400;line-height:.9;color:var(--marrom)}
+.ornamento{text-align:center;margin:12px 0 28px;color:var(--vinho);letter-spacing:8px;font-size:14px;opacity:.5}
+.texto{font-family:'EB Garamond';font-size:clamp(17px,3.8vw,19px);line-height:1.9;max-width:60ch;margin:0 auto;white-space:pre-line}.texto::first-letter{font-family:'UnifrakturMaguntia';font-size:3em;float:left;line-height:.65;margin:.12em.18em 0 0;color:var(--vinho)}
+.footer{margin-top:40px;padding:16px 24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-family:'Fragment Mono';font-size:8px;letter-spacing:3px;opacity:.4}
+@media(max-width:640px){body{padding:0}.livro{grid-template-columns:1fr}.lateral{display:none}.pagina{border-left:8px solid var(--vinho);border-right:8px solid var(--vinho)}.pagina::before{inset:8px}.texto{white-space:normal}}
+</style></head><body><div class="livro"><div class="lateral"></div><div class="pagina"><div class="top"><a href="../index.html">← ARQUIVO</a><span>[002] HIDROFILIA.DAT // 2026</span></div><div class="conteudo"><h1 class="titulo">hidrofilia</h1><div class="ornamento">— ≈ —</div><div class="texto">
+  <P>Vejo um oceano calmo, mas sei que você é meu Oceano Pacífico.
+Sei que mergulhar é um caminho sem volta, porém não importa,
+desde que eu me esqueça em suas ondas, profundidade e movimento.
+Vou me perder, vou perecer sobre seu tecido.
+Que tortura, meu bem fluido.
 
-  <div class="poema"><p>Vejo um oceano calmo, mas sei que você é meu Oceano Pacífico. 
-        Sei que mergulhar é um caminho sem volta, porém não importa, 
-        desde que eu me esqueça em suas ondas, profundidade e movimento. 
-        Vou me perder, vou perecer sobre seu tecido. 
-        Que tortura, meu bem fluido.
-          Nos meus devaneios, pintei o mar com meus lábios e minhas mãos. 
-        Embora fosse inacessível, gostei da forma entregue, 
-        a qual escorria por entre meus dedos. 
-         É impossível, devido ao nosso estado, mas, no meu mundo de rabiscos, 
-        o físico são apenas as minhas mãos, que traçam paixões silenciosas em uma folha. 
-        Seu ritmo hipnotizante me chama. Venha, Cthulhu, afogar-me.
-         Continuo afundando em seus lençóis com o intuito de ser sua</p></div>
-  <a class="voltar" href="../index.html">← retornar</a>
-</div></div>
-</body>
-</html>
-    
+Nos meus devaneios, pintei o mar com meus lábios e minhas mãos.
+Embora fosse inacessível, gostei da forma entregue,
+a qual escorria por entre meus dedos.
+
+É impossível, devido ao nosso estado, mas, no meu mundo de rabiscos,
+o físico são apenas as minhas mãos, que traçam paixões silenciosas em uma folha.
+Seu ritmo hipnotizante me chama. Venha, Cthulhu, afogar-me.</P>
+
+Continuo afundando em seus lençóis com o intuito de ser sua</div><div class="footer"><span>© CEMETERYART_</span></div></div><div class="lateral"></div></div></body></html>
     
     
